@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./rent.css" />
+    <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  />
+    <title>Rent Property</title>
+  </head>
+  <body>
+    <!-- navigation bar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark"
+      style="background-color: #2f4858"
+    >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarTogglerDemo03"
+        aria-controls="navbarTogglerDemo03"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="../home.html" style="margin-left: 10px">NOVO Real Estate</a>
+
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="../home.html"
+              >Home <span class="sr-only"></span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../home.html#about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../home.html#contact">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-2">
+        <ul class="nav">
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              data-toggle="dropdown"
+              href="#"
+              role="button"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+            <i class="material-icons" ">account_circle</i>
+              <span style="font-size: 20px;">Membership</span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right">
+              <a class="dropdown-item" href="#">Sign In</a>
+              <a class="dropdown-item" href="#">Sign up</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- filters -->
+<form>
+    <div class="jumbotron jumbotron-fluid" style="padding: 0;">
+      <div class="container">
+        <h1 class="display-4 heading">Find property for rent</h1>
+        <p class="lead">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit
+        </p>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-4 col-md-4">
+              <p class="filters">Property type</p>
+              <div class="dropdown show mx-4">
+                <select class="form-control">
+                  <option>2BHK</option>
+                  <option>3BHK</option>
+                  <option>Farm House</option>
+                  <option>Bunglow</option>
+                  <option>Office/Studio</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="col-xs-4 col-md-4">
+              <p class="filters">Area</p>
+              <div class="container" style="display: flex;justify-content: center;vertical-align: middle;text-align: center;
+              padding: 0;">
+                <span class="label label-default" style="font-size: 1.5rem;margin: 2px;">FROM</span>
+              <input type="text" class="form-control form-rounded area" placeholder="Sqft">
+              <span class="label label-default"  style="font-size: 1.5rem;margin: 2px;">TO</span>
+              <input type="text" class="form-control form-rounded area" placeholder="Sqft">
+              </div>
+            </div>
+
+            <div class="col-xs-4 col-md-4" >
+              <p class="filters">Price</p>
+              <fieldset class="filter-price" >
+                <div class="price-field">
+                  <input
+                    type="range"
+                    min="1000"
+                    max="50000"
+                    value="1000"
+                    id="lower"
+                  />
+                  <input
+                    type="range"
+                    min="1000"
+                    max="50000"
+                    value="50000"
+                    id="upper"
+                  />
+                </div>
+                <div class="price-wrap">
+                  <span class="price-title">PRICE : </span>
+                  <div class="price-wrap-1">
+                    <input id="one" />
+                    <label for="one">₹</label>
+                  </div>
+                  <div class="price-wrap_line">-</div>
+                  <div class="price-wrap-2">
+                    <input id="two" />
+                    <label for="two">₹</label>
+                  </div>
+                </div>
+              </fieldset>
+            </div>
+          </div>
+          <div class="container">
+            <p class="filters">Location</p>
+            <!-- <div class="search-box" style="margin-top: 40px;">
+                        <input type="text" class="search-txt " name="" placeholder="Select place" >
+                        <a href="#" class="search-btn">
+                          <ion-icon name="search-outline"></ion-icon>
+                        </a>
+                      </div> -->
+            <div class="dropdown show mx-4 "  style="display: flex;justify-content: center;">
+              <select class="form-control searchlocation">
+                <option>Mumbai</option>
+                <option>Hydrebad</option>
+                <option>Chennai</option>
+                <option>Delhi</option>
+                <option>Ratnagiri</option>
+              </select>
+            </div>
+          </div>
+          <div class="container" style="display: flex; justify-content: center;padding: 0;">
+            <a href="#listings" class="btn btn-accent btn-action-lg btn-raised" >
+              <h3 class="filters " >FIND MATCHES</h3>
+              <i class="material-icons" style="font-size: 60px; color: rgb(36, 36, 70);"
+                      >search</i>
+          </a>
+        </div>
+        </div>
+        
+      </div>
+      
+    </div>
+    
+</form>
+
+<!-- listings of properties -->
+<h3 class="titlelistings" id="listings">Property Listings</h3>
+<div class="container listings">
+  
+  <!-- -----------------1--------------------------- -->
+<div class="container">
+  <div class="card">
+    
+    <img src="https://cdn.pixabay.com/photo/2015/11/07/21/29/living-1032732__340.jpg" class="card-img-top propertyimg">
+    
+    <div class="card-body">
+      
+      <center>
+        <h5 class="card-title">Pride housing</h5>
+      </center>
+      
+      <p class="card-text"><p>₹ 40,000 /month</p>
+      <p>Deposit ₹ 120000</p>
+      <p>3,000 sq.ft. Plot Area</p>
+      <p>5 BHK</p>
+      </p>
+
+      <center><a href="#" class="btn button">VIEW PROPERTY</a></center>
+    </div>
+  </div>
+</div>
+<!-- -------------------------------2-------------------------- -->
+<div class="container">
+  <div class="card">
+    
+    <img src="https://cdn.pixabay.com/photo/2019/03/08/20/17/kitchen-4043098_960_720.jpg" class="card-img-top propertyimg">
+    
+    <div class="card-body">
+      
+      <center>
+        <h5 class="card-title">Plush avenue</h5>
+      </center>
+      
+      <p class="card-text"><p>₹ 17,500 /month</p>
+      <p>Deposit 3 month(s) rent</p>
+      <p>1,500 sq.ft. Plot Area</p>
+      <p>3 BHK</p>
+</p>
+      
+      <center><a href="#" class="btn button">VIEW PROPERTY</a></center>
+    </div>
+  </div>
+</div>
+<!-- --------------------------------3------------------------ -->
+<div class="container">
+  <div class="card">
+    
+    <img src="https://cdn.pixabay.com/photo/2016/11/18/17/46/house-1836070__340.jpg" class="card-img-top propertyimg">
+    
+    <div class="card-body">
+      
+      <center>
+        <h5 class="card-title">Oswal Heritage</h5>
+      </center>
+      
+      <p class="card-text"><p>₹ 1.5 L /month</p>
+      <p>Deposit ₹ 600000</p>
+      <p>4,700 sq.ft. Plot Area</p>
+      <p>6 BHK</p>
+      </p>
+
+      <center><a href="#" class="btn button">VIEW PROPERTY</a></center>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- listings2 -->
+<div class="container listings">
+  
+  <!-- -----------------1--------------------------- -->
+<div class="container">
+  <div class="card">
+    
+    <img src="https://cdn.pixabay.com/photo/2018/02/12/10/07/apartment-lounge-3147892__340.jpg" class="card-img-top propertyimg">
+    
+    <div class="card-body">
+      
+      <center>
+        <h5 class="card-title">Pride housing</h5>
+      </center>
+      
+      <p class="card-text"><p>₹ 40,000 /month</p>
+      <p>Deposit ₹ 120000</p>
+      <p>3,000 sq.ft. Plot Area</p>
+      <p>5 BHK</p>
+      </p>
+
+      <center><a href="#" class="btn button">VIEW PROPERTY</a></center>
+    </div>
+  </div>
+</div>
+<!-- -------------------------------2-------------------------- -->
+<div class="container">
+  <div class="card">
+    
+    <img src="https://cdn.pixabay.com/photo/2018/05/02/09/02/baby-boy-3368017__340.jpg" class="card-img-top propertyimg">
+    
+    <div class="card-body">
+      
+      <center>
+        <h5 class="card-title">Plush avenue</h5>
+      </center>
+      
+      <p class="card-text"><p>₹ 17,500 /month</p>
+      <p>Deposit 3 month(s) rent</p>
+      <p>1,500 sq.ft. Plot Area</p>
+      <p>3 BHK</p>
+</p>
+      
+      <center><a href="#" class="btn button">VIEW PROPERTY</a></center>
+    </div>
+  </div>
+</div>
+<!-- --------------------------------3------------------------ -->
+<div class="container">
+  <div class="card">
+    
+    <img src="https://media.istockphoto.com/photos/beautiful-luxury-home-exterior-at-sunset-featuring-large-covered-picture-id1208206114?k=20&m=1208206114&s=612x612&w=0&h=kD-KC6BhYB77xoq_5lvDEJe6NrA9iL5r2-UAsFtig0I=" class="card-img-top propertyimg">
+    
+    <div class="card-body">
+      
+      <center>
+        <h5 class="card-title">Oswal Heritage</h5>
+      </center>
+      
+      <p class="card-text"><p>₹ 1.5 L /month</p>
+      <p>Deposit ₹ 600000</p>
+      <p>4,700 sq.ft. Plot Area</p>
+      <p>6 BHK</p>
+      </p>
+
+      <center><a href="#" class="btn button">VIEW PROPERTY</a></center>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+
+    <!-- Optional JavaScript -->
+    <script src="./rent.js"></script>
+    <!-- Ionic Icons -->
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
