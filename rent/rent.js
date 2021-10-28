@@ -1,3 +1,4 @@
+
 var lowerSlider = document.querySelector('#lower');
 var  upperSlider = document.querySelector('#upper');
 
@@ -31,3 +32,6 @@ lowerSlider.oninput = function () {
     }
     document.querySelector('#one').value=this.value
 };
+
+
+

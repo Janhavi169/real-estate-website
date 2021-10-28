@@ -1,0 +1,30 @@
+[
+    {
+        "id": "p1",
+        "propertyName": "Pride Housing",
+        "propertyType": "5 BHK",
+        "Area": 3000,
+        "rent": 40000,
+        "deposit": 120000,
+        "image1": "https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/12.jpg",
+        "image2": "https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/12.jpg",
+        "image3": "https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/12.jpg",
+        "image4": "https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/12.jpg",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, sapiente illo. Sit error voluptas repellat rerum quidem, soluta enim perferendis voluptates laboriosam."
+        
+    },{
+        "id": "p1",
+        "propertyName": "Plush Avenue",
+        "propertyType": "3 BHK",
+        "Area": 1500,
+        "rent": 17500,
+        "deposit": 80000,
+        "image1": "https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/12.jpg",
+        "image2": "https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/12.jpg",
+        "image3": "https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/12.jpg",
+        "image4": "https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/12.jpg",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, sapiente illo. Sit error voluptas repellat rerum quidem, soluta enim perferendis voluptates laboriosam."
+    },{
+
+    }
+]

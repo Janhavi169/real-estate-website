@@ -11,6 +11,25 @@ html, body {
 
 }
 
+
+#jumbotronBackground{
+  background-image: url("../images/Blurredbackground.png");
+
+  /* Add the blur effect */
+  /* filter: blur(2px);
+  -webkit-filter: blur(2px); */
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
 .lead, .filters{
     text-align: center;
     font-size: 30px;
