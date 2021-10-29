@@ -19,18 +19,8 @@ app.set('views', 'views');
 
 // console.log(session);
 const homeRoute = require("./routes/home");
-const rentRoute = require("./routes/rent");
-const buyRoute = require("./routes/buy");
-const sellRoute = require("./routes/sell");
-const viewPropertyRoute = require("./routes/viewProperty");
-const loginpageRoute = require("./routes/loginpage");
-
 app.use("/", homeRoute);
-app.use("/rent", rentRoute);
-app.use("/buy", buyRoute);
-app.use("/sell", sellRoute);
-app.use("/viewProperty", viewPropertyRoute);
-app.use("/loginpage", loginpageRoute);
+
 
 // const mysqlConnection = require('./config/database');
 
@@ -62,7 +52,7 @@ app.use(express.json());
 
 
 app.listen('3000', () => {
-    console.log("server started on port 3000");
+    console.log("server started on port 50000");
 });
 
 module.exports = app;

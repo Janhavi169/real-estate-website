@@ -1,0 +1,246 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/css/rent.css" />
+    <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  />
+    <title>Rent Property</title>
+  </head>
+  <body>
+    <!-- navigation bar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark"
+      style="background-color: #2f4858"
+    >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarTogglerDemo03"
+        aria-controls="navbarTogglerDemo03"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="/" style="margin-left: 10px">NOVO Real Estate</a>
+
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="/"
+              >Home <span class="sr-only"></span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/#about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/#contact">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/loginpage">Log In</a>
+          </li>
+        </ul>
+      </div>
+      <!-- <div class="col-md-2">
+        <ul>
+          <li>
+            <a href="#">
+            <i class="material-icons">account_circle</i>
+              <span style="font-size: 20px;">Log In</span>
+            </a>
+          </li>
+          </ul>   
+      </div> -->
+    </nav>
+
+<!-- filters -->
+    <form method="POST" action="/rent" id="filter">
+    <div class="jumbotron jumbotron-fluid" id="jumbotronBackground" style="padding: 0;">
+      <div class="container ">
+        <h1 class="display-4 heading">Find property for rent</h1>
+        <p class="lead">
+          Helping you find the property of your dreams
+        </p>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-4 col-md-4">
+              <p class="filters">Property type</p>
+              <div class="dropdown show mx-4">
+                <select name="type" class="form-control">
+                  <option value="" disabled selected>Choose property type</option>
+                  <option value="2 BHK">2 BHK</option>
+                  <option value="3 BHK">3 BHK</option>
+                  <option value="5 BHK">5 BHK</option>
+                  <option value="Farm House">Farm House</option>
+                  <option value="Bunglow">Bunglow</option>
+                  
+                </select>
+              </div>
+            </div>
+
+            <div class="col-xs-4 col-md-4">
+              <p class="filters">Area</p>
+              <div class="container" style="display: flex;justify-content: center;vertical-align: middle;text-align: center;
+              padding: 0;">
+                <span class="label label-default" style="font-size: 1.5rem;margin: 2px;">FROM</span>
+              <input name="from" type="text" class="form-control form-rounded area" placeholder="Sqft">
+              <span class="label label-default"  style="font-size: 1.5rem;margin: 2px;">TO</span>
+              <input name="to" type="text" class="form-control form-rounded area" placeholder="Sqft">
+              </div>
+            </div>
+
+            <div class="col-xs-4 col-md-4" >
+              <p class="filters">Price</p>
+              <fieldset class="filter-price" >
+                <div class="price-field">
+                  <input
+                  name="lowerrange"
+                    type="range"
+                    min="1000"
+                    max="150000"
+                    value="1000"
+                    id="lower"
+                  />
+                  <input
+                  name="upperrange"
+                    type="range"
+                    min="1000"
+                    max="150000"
+                    value="150000"
+                    id="upper"
+                  />
+                </div>
+                <div class="price-wrap">
+                  <span class="price-title">PRICE : </span>
+                  <div class="price-wrap-1">
+                    <input id="one" />
+                    <label for="one">₹</label>
+                  </div>
+                  <div class="price-wrap_line">-</div>
+                  <div class="price-wrap-2">
+                    <input id="two" />
+                    <label for="two">₹</label>
+                  </div>
+                </div>
+              </fieldset>
+            </div>
+          </div>
+          <div class="container">
+            <p class="filters">Location</p>
+            
+            <div class="dropdown show mx-4 "  style="display: flex;justify-content: center;">
+              <select name="location" class="form-control searchlocation">
+                <option value="" disabled selected>Choose location</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Hydrebad">Hydrebad</option>
+                <option value="Chennai">Chennai</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Ratnagiri">Ratnagiri</option>
+              </select>
+            </div>
+          </div>
+<div class="container" style="display: flex; justify-content: center;padding: 0; margin: 20px;">
+            
+     <button class="btn" type="submit" form="filter"><h3 class="filters" >FIND MATCHES</h3>
+      <i class="material-icons" style="font-size: 60px; color: rgb(36, 36, 70);"
+              >search</i></button>
+              
+         
+        </div>
+        </div>
+        
+      </div>
+      
+    </div>
+    
+</form>
+
+
+<!-- listings of properties -->
+<h3 class="titlelistings" id="listings">Property Listings</h3>
+<div class="container listings">
+  
+  <!-- -----------------cards--------------------------- -->
+<div class="row d-flex">
+    
+    <% if(result.length> 0) { %>
+        <% result.forEach(result=>{ %>
+            <div class="col-4">
+  <div class="card" >
+    
+    <img src="<%=result.img%>" class="card-img-top propertyimg">
+    
+    <div class="card-body">
+      
+      <center>
+        <h5 class="card-title"><%=result.name%></h5>
+      </center>
+      
+      <p class="card-text"><p>₹ <%=result.price%> /month</p>
+      <p>Deposit ₹ <%=result.deposit%></p>
+      <p><%=result.area%> sq.ft. Plot Area</p>
+      <p><%=result.type%></p>
+      </p>
+
+      <center><a href="#" class="btn button">VIEW PROPERTY</a></center>
+    </div>
+  </div></div>
+   <% }); %>
+  <% } %>
+</div>
+
+</div>
+
+
+<!-- Footer -->
+<footer class="page-footer font-small teal pt-4" style="width: 100%;background-color: #2f4858 ;">
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="."> novorealestate.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+    <!-- Optional JavaScript -->
+    <script src="/js/rent.js"></script>
+    <!-- Ionic Icons -->
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
